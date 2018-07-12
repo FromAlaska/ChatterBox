@@ -10,7 +10,7 @@ if __name__ == "__main__":
     #     startConnection(sys.argv)
 
     # Check for input from the user
-    AskUserForYes = raw_input("Would you like to connect to the server? (y/n)")
+    AskUserForYes = input("Would you like to connect to the server? (y/n)")
     ifValidAnswer = True
     invalidAnswerCounter = 0
 
@@ -23,8 +23,3 @@ if __name__ == "__main__":
         else:
             AskUserForYes = input("Would you like to connect to the server? (y/n)")
             invalidAnswerCounter = invalidAnswerCounter + 1
-
-    app = QtGui.QApplication(sys.argv)
-    myapp = MyForm()
-    myapp.show()
-    sys.exit(app.exec_())
